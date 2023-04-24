@@ -3,7 +3,7 @@ main {
   flex-direction: column;
   width: 100%;
   background-image: url("../imagens/bg.png");
-  font-size: 1.2em;
+  font-size: 1.5em;
   background-size: cover;
   min-height: 100vh;
   align-items: center;
@@ -15,7 +15,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(230, 166, 255, 0.8);
+  color: #4b0082;
   width: 100%;
   max-width: 800px;
   padding: 30px;

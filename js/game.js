@@ -29,7 +29,8 @@ const checkEndGame = () => {
   const disabledCards = document.querySelectorAll('.disabled-card');
 
   if (disabledCards.length == 20){
-    alert('Parabéns, você venceu!');
+    clearInterval(this.loop);
+    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos`);
   }
 }
 
@@ -111,7 +112,8 @@ const loadGame = () => {
 }
 
 const starTimer = () =>{
-  setInterval(()=>{
+
+  this.loop = setInterval(()=>{
     const atualTime = Number(timer.innerHTML);
     timer.innerHTML = atualTime + 1;
   }, 1000);
